@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "GenreData.h"
+#import "NSDictionary+ValueConverter.h"
 
 @interface genreDataTest : XCTestCase
 
@@ -32,5 +33,26 @@
     GenreData* genre = nil;
     XCTAssertNil(genre);
 }
+
+
+- (void) testInitWithDictionary
+{
+    NSMutableDictionary* dic = [[NSMutableDictionary alloc] init];
+    [dic setIntegerValue: 10 forKey: @"genre_id"];
+    [dic setObject: @"genrename" forKey: @"name"];
+    
+    GenreData* genre = [[GenreData alloc] initWithDictionary: dic];
+    XCTAssertTrue(genre.genreId == 10);
+    XCTAssertTrue([@"genrename" isEqualToString: genre.name]);
+}
+
+- (void) testInitWithJson
+{
+    NSString* json = @"{\"genre_id\": 10, \"name\": \"genrename\"}";
+    GenreData* genre = [[GenreData alloc] initWithJsonString: json];
+    XCTAssertTrue(genre.genreId == 10);
+    XCTAssertTrue([@"genrename" isEqualToString: genre.name]);
+}
+
 
 @end

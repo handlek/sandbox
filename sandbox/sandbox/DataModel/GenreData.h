@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSDictionary+ValueConverter.h"
+#import "SBJson.h"
 
 @interface GenreData : NSObject
 
 @property (nonatomic, assign) NSInteger genreId;
 @property (nonatomic, retain) NSString* name;
 
+- (id) initWithDictionary: (NSDictionary*)data;
+- (id) initWithJsonString: (NSString*)json;
 
 @end

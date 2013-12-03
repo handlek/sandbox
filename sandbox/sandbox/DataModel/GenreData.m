@@ -12,4 +12,28 @@
 
 @synthesize genreId, name;
 
+- (id) initWithDictionary: (NSDictionary*)data
+{
+    if(self = [super init]) {
+        self.genreId = [data intValueForKey: @"genre_id"];
+        self.name    = [data objectOrNilForKey: @"name"];
+    }
+    
+    return self;
+}
+
+- (id) initWithJsonString: (NSString*)json
+{
+    if(self = [super init]) {
+        SBJsonParser *parser = [[SBJsonParser alloc] init];
+        NSDictionary* data = [parser objectWithString: json];
+        
+        self.genreId = [data intValueForKey: @"genre_id"];
+        self.name    = [data objectOrNilForKey: @"name"];
+    }
+    
+    return self;
+}
+
+
 @end
