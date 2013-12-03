@@ -37,6 +37,7 @@
 		EC02BFF9184E0C50006A2856 /* NSDictionary+QueryString.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02BFF4184E0C50006A2856 /* NSDictionary+QueryString.m */; };
 		EC02BFFA184E0C50006A2856 /* NSDictionary+ValueConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02BFF6184E0C50006A2856 /* NSDictionary+ValueConverter.m */; };
 		EC02BFFB184E0C50006A2856 /* NSString+Base64Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02BFF8184E0C50006A2856 /* NSString+Base64Encoder.m */; };
+		EC02BFFD184E0FF9006A2856 /* sandboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02BFFC184E0FF9006A2856 /* sandboxTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		EC02BFF6184E0C50006A2856 /* NSDictionary+ValueConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ValueConverter.m"; sourceTree = "<group>"; };
 		EC02BFF7184E0C50006A2856 /* NSString+Base64Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64Encoder.h"; sourceTree = "<group>"; };
 		EC02BFF8184E0C50006A2856 /* NSString+Base64Encoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64Encoder.m"; sourceTree = "<group>"; };
+		EC02BFFC184E0FF9006A2856 /* sandboxTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sandboxTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			children = (
 				EC02BFB4184E0828006A2856 /* Supporting Files */,
 				EC02BFC7184E0983006A2856 /* genreDataTest.m */,
+				EC02BFFC184E0FF9006A2856 /* sandboxTests.m */,
 			);
 			path = sandboxTests;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC02BFC8184E0983006A2856 /* genreDataTest.m in Sources */,
+				EC02BFFD184E0FF9006A2856 /* sandboxTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
