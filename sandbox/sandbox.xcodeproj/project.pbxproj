@@ -20,7 +20,8 @@
 		EC02BFAF184E0828006A2856 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC02BF8E184E0828006A2856 /* Foundation.framework */; };
 		EC02BFB0184E0828006A2856 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC02BF92184E0828006A2856 /* UIKit.framework */; };
 		EC02BFB8184E0828006A2856 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC02BFB6184E0828006A2856 /* InfoPlist.strings */; };
-		EC02BFBA184E0828006A2856 /* sandboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02BFB9184E0828006A2856 /* sandboxTests.m */; };
+		EC02BFC6184E087A006A2856 /* GenreData.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02BFC5184E087A006A2856 /* GenreData.m */; };
+		EC02BFC8184E0983006A2856 /* genreDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02BFC7184E0983006A2856 /* genreDataTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,9 @@
 		EC02BFAD184E0828006A2856 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EC02BFB5184E0828006A2856 /* sandboxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sandboxTests-Info.plist"; sourceTree = "<group>"; };
 		EC02BFB7184E0828006A2856 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EC02BFB9184E0828006A2856 /* sandboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sandboxTests.m; sourceTree = "<group>"; };
+		EC02BFC4184E087A006A2856 /* GenreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenreData.h; path = DataModel/GenreData.h; sourceTree = "<group>"; };
+		EC02BFC5184E087A006A2856 /* GenreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenreData.m; path = DataModel/GenreData.m; sourceTree = "<group>"; };
+		EC02BFC7184E0983006A2856 /* genreDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = genreDataTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		EC02BF94184E0828006A2856 /* sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				EC02BFC3184E0845006A2856 /* DataModel */,
 				EC02BF9D184E0828006A2856 /* AppDelegate.h */,
 				EC02BF9E184E0828006A2856 /* AppDelegate.m */,
 				EC02BFA0184E0828006A2856 /* Main.storyboard */,
@@ -137,8 +141,8 @@
 		EC02BFB3184E0828006A2856 /* sandboxTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC02BFB9184E0828006A2856 /* sandboxTests.m */,
 				EC02BFB4184E0828006A2856 /* Supporting Files */,
+				EC02BFC7184E0983006A2856 /* genreDataTest.m */,
 			);
 			path = sandboxTests;
 			sourceTree = "<group>";
@@ -150,6 +154,15 @@
 				EC02BFB6184E0828006A2856 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC02BFC3184E0845006A2856 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC02BFC4184E087A006A2856 /* GenreData.h */,
+				EC02BFC5184E087A006A2856 /* GenreData.m */,
+			);
+			name = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC02BFA5184E0828006A2856 /* ViewController.m in Sources */,
+				EC02BFC6184E087A006A2856 /* GenreData.m in Sources */,
 				EC02BF9F184E0828006A2856 /* AppDelegate.m in Sources */,
 				EC02BF9B184E0828006A2856 /* main.m in Sources */,
 			);
@@ -259,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC02BFBA184E0828006A2856 /* sandboxTests.m in Sources */,
+				EC02BFC8184E0983006A2856 /* genreDataTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
