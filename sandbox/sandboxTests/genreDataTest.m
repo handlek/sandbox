@@ -19,7 +19,8 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here; it will be run once, before the first test case.
+    GenreData* genre = nil;
+    NSLog(@"ticke2/ %@", genre);
 }
 
 - (void)tearDown
@@ -31,6 +32,7 @@
 - (void)testExample
 {
     GenreData* genre = nil;
+    NSLog(@"ticke2/ %@", genre);
     XCTAssertNil(genre);
 }
 
